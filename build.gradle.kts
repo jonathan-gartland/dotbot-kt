@@ -12,9 +12,12 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
     compile(kotlin("stdlib-jdk8"))
+    compile(group = "com.xenomachina", name = "kotlin-argparser", version = "2.0.7")
 }
+
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
